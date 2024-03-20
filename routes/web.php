@@ -14,8 +14,42 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('index', [
+        'title' => 'Login'
+    ]);
 });
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('dashboard', [
+        'title' => 'Dashboard'
+    ]);
+});
+Route::get('/guru', function () {
+    return view('teacher.dataguru', [
+        'title' => 'Data Guru'
+    ]);
+});
+Route::get('/guru/tambah', function () {
+    return view('teacher.dataguru_add', [
+        'title' => 'Tambah Data Guru'
+    ]);
+});
+Route::get('/siswa', function () {
+    return view('student.datasiswa', [
+        'title' => 'Data Siswa'
+    ]);
+});
+Route::get('/siswa/tambah', function () {
+    return view('student.datasiswa_add', [
+        'title' => 'Tambah Data Siswa'
+    ]);
+});
+Route::get('/karir', function () {
+    return view('datakarir', [
+        'title' => 'Data Karir'
+    ]);
+});
+Route::get('/nilai', function () {
+    return view('datanilai', [
+        'title' => 'Data Nilai'
+    ]);
 });

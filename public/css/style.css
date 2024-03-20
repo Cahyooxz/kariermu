@@ -4,6 +4,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root {
+    --primary: #3A0CA3;
+}
+
 .navbar-color {
     background-color: #3A0CA3;
 }
@@ -17,15 +21,35 @@
     background-color: #210367;
     color: #fff;
 }
+.button-reset {
+    background-color: crimson;
+    color: #fff;
+}
+
+.button-reset:hover {
+    background-color: rgb(179, 4, 39);
+    color: #fff;
+}
 
 .list {
-    background-color: #34469B;
+    /* background-color: #34469B; */
+    color: white;
+}
+
+.list-logout {
+    background-color: crimson;
+    color: white;
+}
+
+.list-logout:hover {
+    background-color: rgb(161, 7, 38);
     color: white;
 }
 
 .list-active {
     background-color: #509CDB;
     color: white;
+    transition: all ease-in-out 3s;
 }
 
 .list:hover {
@@ -34,6 +58,10 @@
 }
 
 .bg-sidebar {
+    background-color: #3A0CA3;
+}
+
+.bg-purple {
     background-color: #3A0CA3;
 }
 
@@ -48,4 +76,31 @@
 .a-icon {
     text-decoration: none;
     color: #fff;
+}
+
+.icon {
+    font-size: 2rem;
+    color: white;
+}
+
+.icon-round {
+    width: 90px;
+    height: 90px;
+}
+
+@media (max-width: 576px) {
+    .icon-round {
+        width: 50px;
+        height: 50px;
+    }
+
+    .icon {
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .title-data {
+        font-size: 10px;
+        margin: 0;
+    }
 }
